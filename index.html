@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Psicoandino</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">Blog<span>Psicoandino</span></div>
+    <nav class="nav">
+      <a href="#inicio" data-view="list">Inicio</a>
+      <a href="#acerca" data-view="about">Acerca</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <section class="content">
+      <div id="view-list" class="view active">
+        <h1>Entradas recientes</h1>
+        <p class="subtitle">
+          Este es un blog estático de ejemplo. Las entradas se definen en un archivo JS
+          y se renderizan con JavaScript. Ideal para alojar en GitHub Pages.
+        </p>
+        <div id="post-list" class="post-list">
+          <!-- Lista de posts generados por JS -->
+        </div>
+      </div>
+
+      <div id="view-post" class="view">
+        <article id="post-container">
+          <!-- Contenido del post individual -->
+        </article>
+      </div>
+
+      <div id="view-about" class="view">
+        <h1>Acerca del Blog Psicoandino</h1>
+        <p>
+          Este blog es un experimento creativo y técnico. Está construido solo con
+          HTML, CSS y JavaScript puro, sin backend, y se puede alojar gratis en GitHub Pages.
+        </p>
+        <p>
+          Para agregar nuevas entradas solo hay que editar el archivo
+          <code>posts.js</code> y agregar un nuevo objeto al arreglo de posts.
+        </p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h2>Categorías</h2>
+      <ul id="category-list" class="category-list">
+        <!-- Categorías generadas por JS -->
+      </ul>
+
+      <h2>Archivo</h2>
+      <ul id="archive-list" class="archive-list">
+        <!-- Archivo simple por año/mes (opcional) -->
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>Blog Psicoandino · Construido con HTML + CSS + JS · GitHub Pages friendly.</p>
+  </footer>
+
+  <script src="posts.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
