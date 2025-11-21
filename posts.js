@@ -18,8 +18,9 @@ const posts = [
         notas de marketing, ideas para proyectos y reflexiones sueltas.
       </p>
       <p>
-        La idea es mantenerlo simple: una estructura estática, alojada en GitHub Pages,
-        que se puede editar tocando solo un archivo: <code>posts.js</code>.
+        La estética intenta ser suave: una capa de fondo en movimiento lento, que aporta clima
+        sin competir con el texto. Si en algún momento sientes que distrae, siempre puedes
+        bajar la intensidad en <code>styles.css</code> (busca <code>body::before</code>).
       </p>
       <h2>¿Cómo se edita este blog?</h2>
       <ul>
